@@ -1,0 +1,539 @@
+/*Inicio*/
+#about-home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("/imgs/alumnos.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#about-home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+/*Presentación*/
+
+#nosotros{
+    align-items: center;
+    padding: 4vw 8vw 2vw 35vw;
+    color: rgb(10, 10, 107);
+}
+
+#Filosofia{
+    align-items: center;
+    padding: 4vw 8vw 2vw 35vw;
+    color: rgb(10, 10, 107);
+}
+
+.Alternate {
+    flex-direction: row-reverse;
+}
+
+/*Filosofia*/
+#about-mision,
+#about-vision,
+#about-valores,
+#about-objetivos,
+#about-container {
+    display: flex;
+    align-items: center;
+    padding: 1vw 8vw 2vw 8vw;
+}
+
+#about-mision .about-img-mision,
+#about-vision .about-img-vision,
+#about-valores .about-img-valores,
+#about-objetivos .about-img-objetivos,
+#about-container .about-img {
+    width: 60%;
+    padding-right: 60px;
+}
+
+#about-mision .about-text-mision,
+#about-vision .about-text-vision,
+#about-valores .about-text-valores,
+#about-objetivos .about-text-objetivos,
+#about-container .about-text {
+    width: 40%;
+}
+
+#about-mision .about-img-mision img,
+#about-vision .about-img-vision img,
+#about-valores .about-img-valores img,
+#about-objetivos .about-img-objetivos img,
+#about-container .about-img img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Media Query*/
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%
+    }
+}
+
+#about-mision .about-img-mision,
+#about-vision .about-img-vision,
+#about-valores .about-img-valores,
+#about-objetivos .about-img-objetivos,
+#about-container .about-img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+#about-mision .about-text-mision h2,
+#about-vision .about-text-vision h2,
+#about-valores .about-text-valores h2,
+#about-objetivos .about-text-objetivos h2,
+#about-container .about-text h2 {
+    color: rgb(10, 10, 107);
+    padding-bottom: 15px;
+}
+
+#about-mision .about-text-mision p,
+#about-vision .about-text-vision p,
+#about-vision .about-text-vision li,
+#about-valores .about-text-valores li,
+#about-objetivos .about-text-objetivos li,
+#about-container .about-text p {
+    color: #686F7A;
+    font-weight: 300;
+}
+
+#about-vision .about-text-vision .about-fe-vision,
+#about-valores .about-text-valores .about-fe-valores,
+#about-objetivos .about-text-objetivos .about-fe-objetivos,
+#about-container .about-text .about-fe {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#about-vision .about-text-vision .about-fe-vision .fe-text-vision,
+#about-valores .about-text-valores .about-fe-valores .fe-text-valores,
+#about-objetivos .about-text-objetivos .about-fe-objetivos .fe-text-objetivos,
+#about-container .about-text .about-fe .fe-text {
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+#about-vision .about-text-vision .about-fe-vision .fe-text-vision h5,
+#about-valores .about-text-valores .about-fe-valores .fe-text-valores h5,
+#about-objetivos .about-text-objetivos .about-fe-objetivos .fe-text-objetivos h5,
+#about-container .about-text .about-fe .fe-text h5 {
+    font-size: 16px;
+    color: rgb(10, 10, 107);
+}
+
+/* Línea de tiempo */
+#timeline {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#timeline h1 {
+    font-size: 2.5rem;
+    color: rgb(10, 10, 107);
+    margin-bottom: 50px;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-left: 4px solid rgb(10, 10, 107);
+    position: relative;
+    background-color: #fff;
+}
+
+.timeline-item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(10, 10, 107);
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 20px;
+}
+
+.timeline-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(10, 10, 107);
+    margin-bottom: 10px;
+}
+
+.timeline-content {
+    text-align: left;
+}
+
+.timeline-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: rgb(10, 10, 107);
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #686F7A;
+}
+
+
+
+/*Responsive*/
+
+@media(max-width: 769px)
+{
+    #about-mision,
+    #about-vision,
+    #about-valores,
+    #about-objetivos,
+    #about-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nosotros{
+        align-items: center;
+        padding: 4vw 8vw 2vw 25vw;
+        color: rgb(10, 10, 107);
+    }
+
+    #Filosofia{
+        align-items: center;
+        padding: 4vw 8vw 2vw 20vw;
+        color: rgb(10, 10, 107);
+    }   
+
+    .alternate {
+        flex-direction: column;
+    }
+
+    #about-mision .about-img-mision img,
+    #about-vision .about-img-vision img,
+    #about-valores .about-img-valores img,
+    #about-objetivos .about-img-objetivos img,
+    #about-container .about-img img {
+        width: 120%;
+    }
+
+    #about-mision .about-text-mision,
+    #about-vision .about-text-vision,
+    #about-valores .about-text-valores,
+    #about-objetivos .about-text-objetivos,
+    #about-container .about-text {
+        width: 100%;
+        height: 100%;
+        padding-top: 8vh;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .timeline-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 475px) {
+
+    #about-mision,
+    #about-vision,
+    #about-valores,
+    #about-objetivos,
+    #about-container{
+        flex-direction: column;
+        align-items: start;
+        padding-left: 2vh;
+    }
+
+    #nosotros{
+        align-items: start;
+        padding: 4vw 8vw 2vw 13vw;
+    }
+
+    .alternate {
+        flex-direction: column;
+    }
+
+    #Filosofia {
+        align-items: center;
+        padding-left: 65px;
+    }
+
+    #Filosofia h1{
+        font-size: 25px;
+    }
+    #nosotros h1{
+        font-size: 30px;
+    }
+
+    #about-mision .about-img-mision,
+    #about-vision .about-img-vision,
+    #about-valores .about-img-valores,
+    #about-objetivos .about-img-objetivos,
+    #about-container .about-img {
+        align-items: center;
+        padding-left: 40px;
+    }
+
+    #about-mision .about-img-mision img,
+    #about-vision .about-img-vision img,
+    #about-valores .about-img-valores img,
+    #about-objetivos .about-img-objetivos img,
+    #about-container .about-img img{
+        width: 323px;
+    }
+
+    #about-mision .about-text-mision h2,
+    #about-vision .about-text-vision h2,
+    #about-valores .about-text-valores h2,
+    #about-objetivos .about-text-objetivos h2,
+    #about-container .about-text h2{
+        font-size: 20px;
+    }
+
+    #about-mision .about-text-mision,
+    #about-vision .about-text-vision,
+    #about-valores .about-text-valores,
+    #about-objetivos .about-text-objetivos,
+    #about-container .about-text {
+        font-size: 250;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #about-vision .about-fe-vision,
+    #about-valores .about-fe-valores,
+    #about-objetivos .about-fe-objetivos,
+    #about-container .about-fe{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 379px) {
+
+    #about-mision,
+    #about-vision,
+    #about-valores,
+    #about-objetivos,
+    #about-container {
+        align-items: start;
+    }
+
+    #nosotros{
+        align-items: start;
+        padding: 4vw 8vw 2vw 16vw;
+
+    }
+
+    #Filosofia {
+        align-items: center;
+        padding-left: 55px;
+    }
+
+    #Filosofia h1
+    {
+        font-size: 23px;
+    }
+    #nosotros h1{
+        font-size: 25px;
+    }
+
+    .alternate {
+        flex-direction: column;
+    }
+
+    #about-mision .about-img-mision,
+    #about-vision .about-img-vision,
+    #about-valores .about-img-valores,
+    #about-objetivos .about-img-objetivos,
+    #about-container .about-img {
+        align-items: start;
+        flex-direction: column;
+        padding-inline-start: 0px;
+    }
+
+    #about-mision .about-img-mision img,
+    #about-vision .about-img-vision img,
+    #about-valores .about-img-valores img,
+    #about-objetivos .about-img-objetivos img,
+    #about-container .about-img img {
+        width: 350px;
+    }
+
+    #about-mision .about-text-mision h2,
+    #about-vision .about-text-vision h2,
+    #about-valores .about-text-valores h2,
+    #about-objetivos .about-text-objetivos h2,
+    #about-container .about-text h2{
+        font-size: 17px;
+    }
+
+    #about-vision .about-fe-vision,
+    #about-valores .about-fe-valores,
+    #about-objetivos .about-fe-objetivos,
+    #about-container .about-fe{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 345px) {
+
+    #about-mision,
+    #about-vision,
+    #about-valores,
+    #about-objetivos,
+    #about-container {
+        align-items: start;
+    }
+
+    #Filosofia {
+        align-items: center;
+        padding-left: 50px;
+    }
+
+    .alternate {
+        flex-direction: column;
+    }
+
+    #Filosofia h1 {
+        font-size: 19px;
+    }
+
+    #about-vision .about-img-vision,  
+    #about-valores .about-img-valores,
+    #about-objetivos .about-img-objetivos,
+    #about-container .about-img {
+        align-items: start;
+        flex-direction: column;
+        padding-inline-start: 0px;
+    }
+
+    #about-mision .about-img-mision img,
+    #about-vision .about-img-vision img,
+    #about-valores .about-img-valores img,
+    #about-objetivos .about-img-objetivos img,
+    #about-container .about-img img {
+        width: 300px;
+    }
+
+    #about-mision .about-text-mision h2,
+    #about-vision .about-text-vision h2,
+    #about-valores .about-text-valores h2,
+    #about-objetivos .about-text-objetivos h2,
+    #about-container .about-text h2{
+        font-size: 17px;
+    }
+
+    #about-vision .about-fe-vision,
+    #about-valores .about-fe-valores,
+    #about-objetivos .about-fe-objetivos,
+    #about-container .about-fe{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    #about-vision,
+    #about-valores,
+    #about-objetivos,
+    #about-container {
+        align-items: start;
+    }
+
+    #nosotros{
+        align-items: start;
+        padding: 4vw 8vw 2vw 16vw;
+    }
+
+    .alternate {
+        flex-direction: column;
+    }
+
+    #nosotros h1{
+        font-size: 22px;
+    }
+
+    #about-vision .about-img-vision,
+    #about-valores .about-img-valores,
+    #about-objetivos .about-img-objetivos,
+    #about-container .about-img {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    #about-vision .about-img-vision img,
+    #about-valores .about-img-valores img,
+    #about-objetivos .about-img-objetivos img,
+    #about-container .about-img img {
+        width: 300px;
+    }
+
+    #about-vision .about-text-vision h2,
+    #about-valores .about-text-valores h2,
+    #about-objetivos .about-text-objetivos h2,
+    #about-container .about-text h2{
+        font-size: 17px;
+    }
+
+    #about-vision .about-fe-vision,
+    #about-valores .about-fe-valores,
+    #about-objetivos .about-fe-objetivos, 
+    #about-container .about-fe{
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
+

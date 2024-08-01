@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+        
+    <title>Math For All</title>
+    <link rel="icon" href="/imgs/Logos/LogSup1.png" type="image/png">
+    <link rel="shortcut icon" href="/imgs/Logos/LogSup1.png" type="image/png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/blog.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="logo-container">
+        <a href="/index.html"><img src="/imgs/Logos/logo.png" alt=""></a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="/index.html">Principal</a></li>
+                <li><a href="/Pages/about.html">¿Quiénes somos?</a></li>
+                <li><a class="active"  href="#">Galería</a></li>
+                <li><a href="https://themathforall.com/aulavirtual/" target="_blank">Aula Virtual</a></li>
+                <li><a href="/Pages/Contact.html">Contáctanos</a></li>
+            </ul>
+            <img id="menu-btn" src="/imgs/menuhamb.png">
+        </div>
+    </nav>
+
+    <section id="gallery-in">
+        <h2>Galería de Imágenes</h2>
+    </section>
+
+    <!-- Image Gallery -->
+    <section id="gallery">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="/imgs/alumnos.jpg"  onclick="openModal(this)">
+        </div>
+        <div class=" gallery-item">
+                <img src="/imgs/Gallery/im1.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im2.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im3.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im4.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im5.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im6.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im7.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im8.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im9.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im10.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im11.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im12.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im13.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im14.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im15.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im16.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im17.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im18.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im19.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im20.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im21.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im22.jpg" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/gallery/im23.jpg" onclick="openModal(this)">
+            </div>
+
+            
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            <div class="pro-links">
+                <a href="https:/www.youtube.com/@TheMathForAll" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/TheMathForAll" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/the.mathforall/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/50585912578" target="_blank" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <p class="text">Copyright ©2024 All rights reserved | This template is made by Math For All</p>
+    </footer>
+
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="/js/image.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+/*Inicio*/
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("/imgs/alumnos.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn {
+    margin-top: 30px;
+
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue {
+    color: #fff;
+    background: rgb(10, 10, 107);
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover {
+    color: #c32121;
+    background: #fff;
+}
+
+#home a.green {
+    color: #fff;
+    background: rgb(40, 199, 69);
+    transition: 0.3s ease;
+}
+
+#home a.green:hover {
+    color: #c32121;
+    background: #fff;
+}
+
+/*Features*/
+
+#features {
+    padding: 10vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box {
+    background: #ececfd;
+    text-align: center;
+}
+
+#features .fea-box i {
+    padding: 5px;
+    padding-top: 20px;
+    font-size: 2.3rem;
+    color: rgb(10, 10, 107);
+}
+
+#features .fea-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(10, 10, 107);
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+
+/*Course*/
+#course {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+.cards-list {
+    padding-top: 40px;
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    /*box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);*/
+    transition: 0.4s;
+}
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+}
+
+.card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+    color: white;
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
+
+/*Perfiles*/
+
+#experts {
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+#experts .profile {
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border-radius: 40px;
+}
+
+#experts .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: center;
+    background-position: center;
+}
+
+#experts .expert-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#experts .expert-box .profile h1 {
+    text-align: start;
+}
+
+#experts .expert-box .profile p {
+    text-align: centers;
+}
+
+#experts .expert-box .profile:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 20px 15px rgba(67, 66, 66, 0.25)
+}
+
+#experts .expert-box .profile {
+    background: #ececfd;
+    padding: 30px 10px;
+}
+
+/*media query*/
+
+@media(max-width: 769px) {
+
+    #home {
+        padding-top: 0px;
+    }
+
+    #home p {
+        width: 100%;
+    }
+
+    #features {
+        padding: 8vw 4vw 0 4vw;
+    }
+
+    #course {
+        padding: 8vw 4vw 0 8vw;
+        text-align: center;
+    }
+
+    #experts {
+        padding: 8vw 8vw 4vw 8vw;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 320px) {
+
+    #features {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #features h1 {
+        font-size: 20px;
+    }
+
+    #course h1 {
+        font-size: 20px;
+    }
+
+    #course .card {
+        width: 250px;
+        height: 250px;
+    }
+}

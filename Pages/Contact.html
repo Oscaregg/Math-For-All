@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>Contáctanos</title>
+    <link rel="icon" href="/imgs/Logos/LogSup1.png" type="image/png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="shortcut icon" href="/imgs/Logos/LogSup1.png" type="image/png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <!--NavBar-->
+    <nav class="logo-container">
+        <a href="/index.html"><img src="/imgs/Logos/logo.png" alt=""></a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="/index.html">Principal</a></li>
+                <li><a href="/Pages/about.html">¿Quiénes somos?</a></li>
+                <li><a href="/Pages/blog.html">Galería</a></li>
+                <li><a href="https://themathforall.com/aulavirtual/" target="_blank">Aula Virtual</a></li>
+                <li><a class="active" href="#">Contáctanos</a></li>
+            </ul>
+            <img id="menu-btn" src="/imgs/menuhamb.png">
+        </div>
+    </nav>
+
+    <section id="about-home">
+        <h2>Contáctanos</h2>
+    </section>
+
+    <!--Mapa-->
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>Ponte en contacto con nosotros.</span>
+            <h2>Visítanos en la siguiente dirección o contáctanos.</h2>
+            <h3>Información de contacto:</h3>
+            <div>
+                <li>
+                    <i class="fal fa-map"></i>
+                    <p>Del Ranchón de la Alcaldía de Managua, una cuadra y media al Sur</p>
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i>
+                    <p>TheMathForAll@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+505 8786-8153</p>
+                </li>
+                <li>
+                    <i class="far fa-clock"></i>
+                    <p>8:00am - 5:00pm, Sábados <br> 8:00am - 3:00pm, Domingos</p>
+                </li>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d849.6001047056426!2d-86.29770424356494!3d12.
+            128401543947467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155f58f83369d%3A0xbc21c9c43f22c520!2sMath%20For%20All!5
+            e0!3m2!1ses-419!2sni!4v1720643104526!5m2!1ses-419!2sni" width="600" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!--Formulario de contacto-->
+
+    <section id="form-details">
+        <form action="https://formsubmit.co/oscargggarcia230105@gmail.com" method="POST">
+            <span>Déjanos un mensaje</span>
+            <h2>Te leemos.</h2>
+            <input type="text" placeholder="Nombre" name="Nombre">
+            <input type="text" placeholder="Correo electrónico" name="E-mail">
+            <input type="text" placeholder="Asunto" name="Asunto">
+            <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <div class="btn">
+                <button onclick="mostrarMensaje()" class="green" type="submit">Enviar</button>
+            </div>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/Pages/Contact.html">
+            <input type="hidden" name="_captcha" value="false">
+
+        </form>
+
+        <!--Equipo de Math For All-->
+
+        <div class="people">
+            <div>
+                <img src="/imgs/personal/CEAM.jpg" alt="">
+                <p><span>Carlos Emilio Aburto</span> Ingeniero electrónico <br>Director de Math For All</p>
+            </div>
+            <div>
+                <img src="/imgs/personal/weychen.jpg" alt="">
+                <p><span>Weychen Eng Cuadrado</span> Estudiante de Ingeniería en Computación <br>Maestro ayudante</p>
+            </div>
+            <div>
+                <img src="/imgs/personal/kevin1.jpg" alt="">
+                <p><span>Kevin Steven Aguilar</span> Estudiante de Ingeniería en Computación <br>Maestro ayudante</p>
+            </div>
+            <div>
+                <img src="/imgs/personal/oscar.jpg" alt="">
+                <p><span>Oscar Enrique García</span> Estudiante de Ingeniería de Sistemas <br>Maestro ayudante</p>
+            </div>
+            <div>
+                <img src="/imgs/personal/Roci1.jpg" alt="">
+                <p><span>Rocio Estefania Rodriguez</span> Estudiante de Ingeniería Química <br>Maestra ayudante</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="copyright">
+            <div class="pro-links">
+                <a href="https:/www.youtube.com/@TheMathForAll" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/TheMathForAll" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/the.mathforall/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/50585912578" target="_blank" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <p class="text">Copyright ©2024 All rights reserved | This template is made by Math For All</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/confirmacion.js"></script>
+</body>
+
+</html>

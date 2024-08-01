@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Math For All</title>
+    <link rel="icon" href="/imgs/Logos/LogSup1.png" type="image/png">
+    <link rel="shortcut icon" href="/imgs/Logos/LogSup1.png" type="image/png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/login.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <!--NavBar-->
+    <nav class="logo-container">
+        <a href="/index.html"><img src="/imgs/Logos/logo.png" alt=""></a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="/index.html">Principal</a></li>
+                <li><a href="/Pages/about.html">¿Quiénes somos?</a></li>
+                <li><a href="/Pages/blog.html">Galería</a></li>
+                <li><a href="https://themathforall.com/aulavirtual/" target="_blank">Aula Virtual</a></li>
+                <li><a href="/Pages/Contact.html">Contáctanos</a></li>
+            </ul>
+            <img id="menu-btn" src="/imgs/menuhamb.png">
+        </div>
+    </nav>
+
+    <!--Login-->
+    <section id="registration">
+        <div class="form">
+            <h3>Mandanos tu información para contactarte</h3>
+
+            <form class="formulario" action="https://formsubmit.co/oscargggarcia230105@gmail.com" method="POST">
+                <input type="text" placeholder="Nombre" name="nombre" id="">
+                <input type="email" placeholder="Correo Electrónico" name="email" id="">
+                <input type="text" placeholder="Número Telefonico" name="Número de telefono" id="">
+
+                <div class="btn">
+                    <button onclick="mostrar()" class="green" type="submit">Enviar</button>
+                </div>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/Pages/login.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="copyright">
+            <div class="pro-links">
+                <a href="https:/www.youtube.com/@TheMathForAll" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/TheMathForAll" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/the.mathforall/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/50585912578" target="_blank" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <p class="text">Copyright ©2024 All rights reserved | This template is made by Math For All</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/confirmLogin.js"></script>
+    <script src="/js/count.js"></script>
+
+</body>
+
+</html>

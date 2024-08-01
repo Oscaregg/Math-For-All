@@ -1,0 +1,92 @@
+/*Registro*/
+
+#registration {
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),url("/imgs/Logos/inicio.png");
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Apila elementos verticalmente */
+}
+
+#registration .form {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: rgba(31, 38, 135, 0.37);
+    color: white;
+}
+
+#registration .form input {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(10, 10, 107);
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#registration .form input::placeholder {
+    color: #413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#registration .form .btn {
+    margin-top: 20px;
+}
+
+#registration .form button.green {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(40, 199, 69);
+    border: none;
+    transition: 0.3s ease;
+}
+
+#registration .form button.green:hover {
+    color: #fff;
+    background: rgb(10, 10, 107);
+}
+
+/*Query media*/
+@media(max-width: 769px) {
+    #registration {
+        padding: 6vw 4vw 6vw 4vw;
+        height: 140vh;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+}
+
+@media (max-width: 475px) {
+    #registration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
