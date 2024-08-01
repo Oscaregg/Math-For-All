@@ -1,6 +1,6 @@
 /* Image Gallery */
 #gallery-in {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("/imgs/alumnos.jpg");
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("./imgs/alumnos.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
